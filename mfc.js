@@ -1,16 +1,16 @@
 
-var myVar;
+// var myVar;
 
-function myFunction() {
-  myVar = setTimeout(showPage, 3000);
-}
+// function myFunction() {
+//   myVar = setTimeout(showPage, 3000);
+// }
 
-function showPage() {
-  document.getElementById("loader").style.display = "none";
-  document.getElementById("mainDiv").style.display = "block";
-}
+// function showPage() {
+//   document.getElementById("loader").style.display = "none";
+//   document.getElementById("mainDiv").style.display = "block";
+// }
 
-
+$(document).ready();
 $(function(){
 	$(document).scroll(function(){
 		var $nav = $("#mainNav");
@@ -76,21 +76,12 @@ $(function(){
 });
 
 $(function(){
-	$(document).hover(function(){
+	$(window).on("resize", function(){
 		$(".nav-ele").toggleClass("small", $(window).width() < "991");
 		$("#mainNav").toggleClass("smallBack", $(window).width() < "991");
-		})
-	});
-
-
-$(function(){
-	$(document).hover(function(){
 		$("#gg,#word,#blinking").toggleClass("flex-small", $(window).width() < "991");
-		})
-	});
-
-$(function(){
-	$(document).hover(function(){
+		$("#work1,#work").toggleClass("head_small", $(window).width() < "991");
+		$(".card-img").toggleClass("card-img-dis", $(window).width() < "991");
 		$("#flex").toggleClass("flex-div", $(window).width() < "991");
 		})
 	});
@@ -102,5 +93,18 @@ $(document).ready(function(){
         placement : 'top',
         trigger: 'hover'
     })
+});
+
+
+
+$(function(){
+	if($(window).width() < "991"){
+		$(".nav-ele").toggleClass("small");
+		$("#mainNav").toggleClass("smallBack");
+		$("#gg,#word,#blinking").toggleClass("flex-small");
+		$("#work1,#work").toggleClass("head_small");
+		$(".card-img").toggleClass("card-img-dis");
+		$("#flex").toggleClass("flex-div");
+	}
 });
 // <div class="owl-stage" style="transform: translate3d(-2820px, 0px, 0px); transition: all 0.25s ease 0s; width: 5660px; padding-left: 10px; padding-right: 10px;">
