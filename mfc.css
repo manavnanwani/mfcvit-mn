@@ -40,7 +40,16 @@ body {
   100% { transform: rotate(360deg); }
 }*/
 
+/*Mobile*/
 
+.head_small{
+	font-size: 60px !important;
+}
+
+.card-img-dis{
+	display: none;
+}
+/*Mobile*/
 
 .navbar-nav {
 	margin: 0 auto;
@@ -209,6 +218,8 @@ body {
     width: 100%;
     height: 200px;
 }
+
+
 .crd {
 	list-style: none;
 	text-align: center;
