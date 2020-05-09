@@ -1,4 +1,8 @@
-
+window.addEventListener("load", function()
+{
+	const loader = document.querySelector(".loader");
+	loader.className += " hidden";
+	});
 // var myVar;
 
 // function myFunction() {
@@ -84,6 +88,7 @@ $(function(){
 		$(".card-img").toggleClass("card-img-dis", $(window).width() < "991");
 		$("#flex").toggleClass("flex-div", $(window).width() < "991");
 		$(".pers").toggleClass("pers-sml", $(window).width() < "991");
+		$(".pers1").toggleClass("pers-sml", $(window).width() < "768");
 		})
 	});
 
@@ -107,6 +112,12 @@ $(function(){
 		$(".card-img").toggleClass("card-img-dis");
 		$("#flex").toggleClass("flex-div");
 		$(".pers").toggleClass("pers-sml");
+	}
+});
+
+$(function(){
+	if($(window).width() < "768"){
+		$(".pers1").toggleClass("pers-sml");
 	}
 });
 // <div class="owl-stage" style="transform: translate3d(-2820px, 0px, 0px); transition: all 0.25s ease 0s; width: 5660px; padding-left: 10px; padding-right: 10px;">
