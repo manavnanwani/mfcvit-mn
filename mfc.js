@@ -83,6 +83,7 @@ $(function(){
 		$("#work1,#work").toggleClass("head_small", $(window).width() < "991");
 		$(".card-img").toggleClass("card-img-dis", $(window).width() < "991");
 		$("#flex").toggleClass("flex-div", $(window).width() < "991");
+		$(".pers").toggleClass("pers-sml", $(window).width() < "991");
 		})
 	});
 
@@ -105,6 +106,7 @@ $(function(){
 		$("#work1,#work").toggleClass("head_small");
 		$(".card-img").toggleClass("card-img-dis");
 		$("#flex").toggleClass("flex-div");
+		$(".pers").toggleClass("pers-sml");
 	}
 });
 // <div class="owl-stage" style="transform: translate3d(-2820px, 0px, 0px); transition: all 0.25s ease 0s; width: 5660px; padding-left: 10px; padding-right: 10px;">

@@ -46,9 +46,11 @@ body {
 	font-size: 60px !important;
 }
 
-.card-img-dis{
+.card-img-dis, .pers-sml{
 	display: none;
 }
+
+
 /*Mobile*/
 
 .navbar-nav {
