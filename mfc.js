@@ -92,6 +92,9 @@ $(function(){
 		$("#flex").toggleClass("flex-div", $(window).width() < "991");
 		$(".pers").toggleClass("pers-sml", $(window).width() < "991");
 		$(".pers1").toggleClass("pers-sml", $(window).width() < "768");
+		$(".c-top").toggleClass("c-top-mob", $(window).width() < "768");
+		$(".second-row").toggleClass("sr", $(window).width() < "768");
+		$(".first-row").toggleClass("fr", $(window).width() < "768");
 		})
 	});
 
@@ -121,6 +124,8 @@ $(function(){
 $(function(){
 	if($(window).width() < "768"){
 		$(".pers1").toggleClass("pers-sml");
+		$(".c-top").toggleClass("c-top-mob");
+		$(".second-row").toggleClass("sr");
+		$(".first-row").toggleClass("fr");
 	}
 });
-// <div class="owl-stage" style="transform: translate3d(-2820px, 0px, 0px); transition: all 0.25s ease 0s; width: 5660px; padding-left: 10px; padding-right: 10px;">

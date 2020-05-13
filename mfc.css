@@ -25,7 +25,11 @@ body {
   justify-content: center;
   align-items: center;
 }
-
+#loader{
+	color: red;
+	font-size: 20px;
+}
+ 
 .loader.hidden {
 	animation: fadeOut 1s;
 	animation-fill-mode: forwards;
@@ -48,6 +52,17 @@ body {
 	display: none;
 }
 
+.c-top-mob{
+	height: 250px;
+}
+
+.sr{
+	margin-top: 0 !important;
+}
+
+.fr {
+	padding-bottom: 0 !important;
+}
 
 /*Mobile*/
 
@@ -150,7 +165,7 @@ body {
 }
 
 #workshop {
-	height: 1400px;
+	height: 1450px;
 	background: orange; /*or black*/
 	margin: 10px auto;
 	padding-top: 60px;
