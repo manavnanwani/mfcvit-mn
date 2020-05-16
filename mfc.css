@@ -325,6 +325,9 @@ div.carousel {
 .py-2 {
 	vertical-align: center;
 }
+#mfc {
+	color: blue;
+}
 
 a[data-toggle="popover"] {
 	color:black !important;
